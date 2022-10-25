@@ -1,0 +1,121 @@
+#+EXPORT_FILE_NAME: ./resume.pdf
+#+OPTIONS: toc:nil H:10 tex:t
+#+STARTUP: hidestars indent
+#+LaTeX_HEADER: \hypersetup{colorlinks=true, urlcolor={awesome-darknight}}
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+#+LaTeX_HEADER: \usepackage{enumitem}
+#+LaTeX_HEADER: \setlist{leftmargin=0.25in,nosep}
+#+LATEX_CLASS: awesomecv
+#+LATEX_COMPILER: xelatex
+# CV color - options include: 'awesome-red (default), 'awesome-emerald,
+# 'awesome-skyblue', 'awesome-pink', 'awesome-orange', 'awesome-nephritis',
+# 'awesome-concrete' and 'awesome-darknight', plus any standard color names.
+#+CVCOLOR: awesome-red
+
+#+TITLE: Embedded Software Developer
+#+AUTHOR: Reginald Marr
+#+email: reginald.t.marr@gmail.com
+
+#+ADDRESS: 29 Erie Avenue, Hamilton, Ontario
+#+MOBILE: +1 519 410 9617
+#+LINKEDIN: reginald-marr-0b28a8a3
+#+QUOTE: "Everything is mutable"
+#+GITHUB: reggiemarr
+#+STACKOVERFLOW: 3274010 reggiemarr
+
+* Summary
+
+I am first and foremost most proud of my ability to collaborate with my peers across a variety of disciplines (and across a variety of physical locations) to produce something better than the sum of our individual contributions.
+Additionally I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.
+By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.
+
+I am forever keen to learn, adapt and grow.
+
+* Experience
+
+** [[https://www.l3harris.com/all-capabilities/wescam-mx-series][Embedded Software Designer - New Product Integration]]
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2020-01-01>
+:TO:     <2022-10-24>
+:LOCATION: Hamilton, Ontario
+:EMPLOYER: L3Harris-Wescam
+:END:
+
++ Designed a python/rust framework to support automated testing and analysis of MX systems.
++ Developed capabilities to streamline conversion of text-based documentation into PDF, Powerpoint and static website formats.
++ Led software development/project coordination for both NPI and sustaining.
++ Collaborated with various engineering departments to develop software for and refine design specifics and requirements for various lens and laser sub-assemblies.
+
+** [[https://www.l3harris.com/all-capabilities/wescam-mx-series][Embedded Software Designer - Sustaining]]
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2018-05-18>
+:TO:     <2019-12-31>
+:LOCATION: Hamilton, Ontario
+:EMPLOYER: L3Harris-Wescam
+:END:
+
++ Provided support triaging bugs found during pre-shipment verification.
++ Acted as inter-department liaison to solve logistical issues for customer deliveries.
++ Developed automation tooling using python and web-based technologies to optimized various workflows.
++ Generated documentation and improvement proposals for legacy software components.
++ Completed TDD for Embedded C/C++ - WINGMAN SOFT, LLC, Issued Mar 2022
++ NATO Secret Clerance.
+
+** [[https://www.eng.mcmaster.ca/sept/practice/learning-factory][Tech Assistant]]
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2017-05-01>
+:TO:     <2017-08-31>
+:LOCATION: Hamilton, Ontario
+:EMPLOYER: McMaster University - The Learning Factory
+:END:
+
++ Responsible for process design, DCS system integration, hardware installation, and HMI development.
++ Developed a product to track part/tool utilization using custom RFID hardware developing software using embedded C, C#, and MySQL.
+
+** [[https://www.directenergy.com/about/brands/airtron][Project Coordinator]]
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2016-02-01>
+:TO:     <2016-09-01>
+:LOCATION: Missisauga, Ontario
+:EMPLOYER: Airtron Canada
+:END:
+
++ Designed and developed raspberry pi based relay to provide logging of environmental variables using python and custom REST API.
++ Assisted in creating a proposal for a biogas cogen to convert food and animal waste into low grade electricity and high grade heat.
++ Provided estimation support on energy services contracts involving the offset of GHG's via load balancing, HVAC system improvements, and more.
+* Education
+
+** Bachelor of Technology - [[https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology][Automation Engineering Technology]]
+:PROPERTIES:
+:CV_ENV: cvschool
+:FROM: <2013-09-01>
+:TO: <2017-12-31>
+:LOCATION: Hamilton, Ontario
+:SCHOOL: McMaster University
+:END:
++ 16 Months Co-Op
++ Developing software to convert 3D CAD models into configuration files and GCode to be used for novel metal 3D printing process. (Capstone)
++ Developed a neural network and network industrial system for modeling and controlling the distillation of ethanol. (Level 600 Project)
+
+** Advanced Diploma - [[https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533][Chemical Engineering Technology]]
+:PROPERTIES:
+:CV_ENV: cvschool
+:FROM: <2013-09-01>
+:TO: <2017-12-31>
+:LOCATION: Hamilton, Ontario
+:SCHOOL: Mohawk College
+:END:
++ [[https://acbsp.org/?][CIM-accredited]] Business Management Certificate.
+
+* Skills
+# TODO this section should either be cvhonor or cvsubentry
++ Languages
+    C/C++, Rust, Python, MySQL
++ Developer Tools
+    Git, Docker, Jenkins, Jira, Emacs
++ Frameworks
+    threadX, freeRTOS, x86 POSIX
