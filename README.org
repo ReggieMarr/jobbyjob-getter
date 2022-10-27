@@ -36,7 +36,7 @@ I use emacs to generate this stuff
 
     (use-package! ox-altacv
         :load-path "~/.emacs.d/.local/straight/repos/org-cv/"
-        :init (require 'ox-moderncv))
+        :init (require 'ox-altacv))
 
     #+end_src
 *** Latex
