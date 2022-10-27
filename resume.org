@@ -1,10 +1,19 @@
-#+EXPORT_FILE_NAME: ./resume.pdf
+#+TITLE: Embedded Software Developer
+#+AUTHOR: Reginald Marr
+#+EMAIL: reginald.t.marr@gmail.com
+#+ADDRESS: Hamilton, ON
+#+MOBILE: +1 519 410 9617
+#+LINKEDIN: reginald-marr-0b28a8a3
+#+SUBTITLE: "Everything is mutable"
+#+GITHUB: reggiemarr
+#+STACKOVERFLOW: 3274010 reggiemarr
+
+#+EXPORT_FILE_NAME: ./reginald_marr-resume.pdf
 #+OPTIONS: toc:nil H:10 tex:t
 #+STARTUP: hidestars indent
 #+LaTeX_CLASS_OPTIONS: [a4paper,ragged2e,withhyper]
 #+LaTeX_HEADER: \usepackage{enumitem}
 #+LATEX_COMPILER: xelatex
-
 # CV color - options include: 'awesome-red (default), 'awesome-emerald,
 # 'awesome-skyblue', 'awesome-pink', 'awesome-orange', 'awesome-nephritis',
 # 'awesome-concrete' and 'awesome-darknight', plus any standard color names.
@@ -17,25 +26,13 @@
 #+LATEX_HEADER: \geometry{left=1cm,right=9cm,marginparwidth=8cm,marginparsep=0.5cm,top=1.25cm,bottom=1.25cm}
 # #+CVCOLOR: gray
 
-#+TITLE: Embedded Software Developer
-#+AUTHOR: Reginald Marr
-#+email: reginald.t.marr@gmail.com
-
-#+ADDRESS: 29 Erie Avenue, Hamilton, Ontario
-#+MOBILE: +1 519 410 9617
-#+LINKEDIN: reginald-marr-0b28a8a3
-#+QUOTE: "Everything is mutable"
-#+GITHUB: reggiemarr
-#+STACKOVERFLOW: 3274010 reggiemarr
-
 #+latex: \marginpar{
-* Summary
-
+* About Me
 I am first and foremost most proud of my ability to collaborate with my peers across a variety of disciplines (and across a variety of physical locations) to produce something better than the sum of our individual contributions.
-Additionally I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.
-By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.
 
-I am forever keen to learn, adapt and grow.
+Additionally I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.
+
+By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.
 
 * Education
 
@@ -47,9 +44,14 @@ I am forever keen to learn, adapt and grow.
 :LOCATION: Hamilton, Ontario
 :EMPLOYER: McMaster University
 :END:
-+ 16 Months Co-Op
-+ Developing software to convert 3D CAD models into configuration files and GCode to be used for novel metal 3D printing process. (Capstone)
-+ Developed a neural network and network industrial system for modeling and controlling the distillation of ethanol. (Level 600 Project)
++ Capstone
+  Developed G-Code Generator Cross platform application (Qt & C++) from 3D CAD models for novel metal 3D printing process.
+
++ Level 600 Project
+  Developed a neural network and network industrial system for modeling and controlling the distillation of ethanol.
+
++ Completed 16 Months Co-Op
++ Received additional [[https://acbsp.org/?][CIM-accredited]] Business Management Certificate.
 
 ** AdvDip - [[https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533][Chemical Engineering Technology]]
 :PROPERTIES:
@@ -59,14 +61,12 @@ I am forever keen to learn, adapt and grow.
 :LOCATION: Hamilton, Ontario
 :EMPLOYER: Mohawk College
 :END:
-+ [[https://acbsp.org/?][CIM-accredited]] Business Management Certificate.
 
 * Skills
-# TODO this section should either be cvhonor or cvsubentry
 + Languages
     C/C++, Rust, Python, SQL, Matlab
 + Developer Tools
-    Git, Docker, Jenkins, Jira, Ansible, Kubernetes
+    Git, Docker, Jenkins, Jira, Ansible
 + Frameworks
     threadX, freeRTOS, POSIX, Emacs
 
@@ -86,7 +86,8 @@ I am forever keen to learn, adapt and grow.
 + Designed a python/rust framework to support automated testing and analysis of MX systems.
 + Developed capabilities to streamline conversion of text-based documentation into PDF, Powerpoint and static website formats.
 + Led software development/project coordination for both NPI and sustaining.
-+ Collaborated with various engineering departments to develop software for and refine design specifics and requirements for various lens and laser sub-assemblies.
++ Collaborated across engineering disciplines to develop and refine lens and laser sub-assembly for advanced EO products.
++ Performed collection and analysis of complex systems during in-field flight tests.
 
 ** [[https://www.l3harris.com/all-capabilities/wescam-mx-series][Embedded Software Designer - Sustaining]]
 :PROPERTIES:
@@ -101,7 +102,7 @@ I am forever keen to learn, adapt and grow.
 + Acted as inter-department liaison to solve logistical issues for customer deliveries.
 + Developed automation tooling using python and web-based technologies to optimized various workflows.
 + Generated documentation and improvement proposals for legacy software components.
-+ Completed TDD for Embedded C/C++ - WINGMAN SOFT, LLC, Issued Mar 2022
++ Utilized TDD training to develop robust bugfixes and improvements to legacy software.
 
 ** [[https://www.eng.mcmaster.ca/sept/practice/learning-factory][Tech Assistant]]
 :PROPERTIES:
