@@ -11,31 +11,30 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{xcolor}
 \geometry{left=1cm,right=9cm,marginparwidth=8cm,marginparsep=0.5cm,top=1.25cm,bottom=1.25cm}
 % Change the colours if you want to
-\definecolor{VividPurple}{HTML}{009900}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{333333}
-\colorlet{heading}{VividPurple}
-\colorlet{accent}{VividPurple}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
+\definecolor{awesome-emerald}{HTML}{00A388}
+\definecolor{awesome-skyblue}{HTML}{0395DE}
+\definecolor{awesome-pink}{HTML}{EF4089}
+\definecolor{awesome-orange}{HTML}{FF6138}
+\definecolor{awesome-nephritis}{HTML}{27AE60}
+\definecolor{awesome-red}{HTML}{DC3522}
+\definecolor{awesome-darknight}{HTML}{131A28}
+\definecolor{awesome-opposite}{HTML}{E45D4D}
+\colorlet{awesome}{awesome-red}
+
+\colorlet{accent}{awesome-opposite}
+\colorlet{heading}{awesome}
+\colorlet{emphasis}{awesome-darknight}
+\colorlet{body}{black!80!white}
 \hypersetup{
- colorlinks=true,
- urlcolor=olive!50!black!30!green,
+    colorlinks=true,
+    urlcolor={awesome-concrete},
+    linkbordercolor=awesome-emerald,% hyperlink borders will be red
+    pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
  }
 \tagline{Embedded Software Developer}
-\hypersetup{
- pdfauthor={Reginald Marr},
- pdftitle={Embedded Software Developer},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Eric Dyer}, 
- pdflang={English}}
-
-\quote{``Everything is mutable''}
-
-\begin{document}
 
 \name{Reginald Marr}
 \personalinfo{
@@ -45,7 +44,9 @@
 \github{reggiemarr}
 \linkedin{reginald-marr-0b28a8a3}
 }
+\quote{``Everything is mutable''}
 
+\begin{document}
 
 \begin{fullwidth}
 \makecvheader
@@ -53,6 +54,7 @@
 \marginpar{
 \section{Summary}
 \label{sec:org70f258b}
+
 
 I am first and foremost most proud of my ability to collaborate with my peers across a variety of disciplines (and across a variety of physical locations) to produce something better than the sum of our individual contributions.\\
 Additionally I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.\\
