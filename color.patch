@@ -1,0 +1,93 @@
+diff --git a/altacv.cls b/altacv.cls
+index 93e0303..785018b 100644
+--- a/altacv.cls
++++ b/altacv.cls
+@@ -39,10 +39,39 @@
+ 
+ \RequirePackage{xcolor}
+ 
+-\colorlet{accent}{blue!70!black}
++\definecolor{awesome-red}{HTML}{DC3522}
++\definecolor{awesome-darknight}{HTML}{131A28}
++\definecolor{awesome-opposite}{HTML}{E45D4D}
++\colorlet{awesome}{awesome-red}
++% \colorlet{accent}{awesome}
++% \colorlet{accent}{blue!70!black}
+ \colorlet{heading}{black}
+-\colorlet{emphasis}{black}
++% \colorlet{emphasis}{black}
+ \colorlet{body}{black!80!white}
++
++% \definecolor{VividPurple}{HTML}{3E0097}
++% \definecolor{SlateGrey}{HTML}{2E2E2E}
++% \definecolor{LightGrey}{HTML}{666666}
++% % \colorlet{name}{black}
++% % \colorlet{tagline}{PastelRed}
++% \colorlet{heading}{VividPurple}
++% \colorlet{headingrule}{VividPurple}
++% % \colorlet{subheading}{PastelRed}
++% \colorlet{accent}{VividPurple}
++% \colorlet{emphasis}{awesome}
++% \colorlet{body}{LightGrey}
++
++%-------------------------------------------------------------------------------
++%                Configuration for fonts
++%-------------------------------------------------------------------------------
++\ifxetexorluatex
++  % If using xelatex or lualatex:
++  \setmainfont{Lato}
++\else
++  % If using pdflatex:
++  \usepackage[default]{lato}
++\fi
++
+ \newcommand{\itemmarker}{{\small\textbullet}}
+ \newcommand{\ratingmarker}{\faCircle}
+ 
+@@ -95,15 +124,22 @@
+ 
+ \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
+ 
++% Defines writer's quote (optional)
++% Usage: \quote{<quote>}
++\renewcommand*{\quote}[1]{\def\@quote{#1}}
++
+ \newcommand{\makecvheader}{%
+   \begingroup
+     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
+-    \raggedright\color{emphasis}%
++    \centering\color{emphasis}%
+     {\Huge\bfseries\MakeUppercase{\@name}\par}
+     \medskip
+     {\large\bfseries\color{accent}\@tagline\par}
+     \medskip
+     {\footnotesize\bfseries\@personalinfo\par}
++    \ifthenelse{\isundefined{\@quote}}%
++      {}%
++      {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%
+     \ifdef{\@photodiameter}{%
+     \end{minipage}\hfill%
+     \begin{minipage}{\@photodiameter}
+@@ -116,8 +152,6 @@
+   \endgroup\medskip
+ }
+ 
+-\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
+-
+ \renewcommand{\section}[2][]{%
+   \bigskip%
+   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
+@@ -125,6 +159,13 @@
+   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
+ }
+ 
++% \renewcommand{\section}[1]{%
++%   \vspace{\acvSectionTopSkip}
++%   \sectionstyle{#1}
++%   \phantomsection
++%   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
++% }
++
+ \renewcommand{\subsection}[1]{%
+   \smallskip%
+   {\color{emphasis}\large\bfseries{#1}\par}\medskip
