@@ -28,7 +28,7 @@
 
 #+latex: \marginpar{
 * About Me
-I am first and foremost most proud of my ability to collaborate with my peers across a variety of disciplines (and across a variety of physical locations) to produce something better than the sum of our individual contributions.
+I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.
 
 Additionally I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.
 
