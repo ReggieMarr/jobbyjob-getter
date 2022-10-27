@@ -34,13 +34,13 @@ Additionally I pride myself on my ability to grind away at complex problems, bre
 
 By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.
 
-* Education
+* Education & Certifications
 
 ** B .Tech - [[https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology][Process Automation]]
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM: <2013-09-01>
-:TO: <2017-12-31>
+:TO: <2018-06-15>
 :LOCATION: Hamilton, Ontario
 :EMPLOYER: McMaster University
 :END:
@@ -51,13 +51,20 @@ By doing this I am able to develop robust solutions which solve not just the spe
   Developed a neural network and network industrial system for modeling and controlling the distillation of ethanol.
 
 + Completed 16 Months Co-Op
-+ Received additional [[https://acbsp.org/?][CIM-accredited]] Business Management Certificate.
-
 ** AdvDip - [[https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533][Chemical Engineering Technology]]
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM: <2013-09-01>
-:TO: <2017-12-31>
+:TO: <2018-06-15>
+:LOCATION: Hamilton, Ontario
+:EMPLOYER: Mohawk College
+:END:
+
+** [[https://acbsp.org/?][Certificate in Business Management]]
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2013-09-01>
+:TO: <2018-06-15>
 :LOCATION: Hamilton, Ontario
 :EMPLOYER: Mohawk College
 :END:
