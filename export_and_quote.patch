@@ -1,0 +1,200 @@
+diff --git a/ox-altacv.el b/ox-altacv.el
+index 959bc56..e760650 100644
+--- a/ox-altacv.el
++++ b/ox-altacv.el
+@@ -50,8 +50,54 @@
+   :group 'org-export
+   :version "25.3")
+ 
++(defun org-altacv-export-to-pdf
++    (&optional async subtreep visible-only body-only ext-plist)
++  "Export current buffer to LaTeX then process through to PDF.
++
++If narrowing is active in the current buffer, only export its
++narrowed part.
++
++If a region is active, export that region.
++
++A non-nil optional argument ASYNC means the process should happen
++asynchronously.  The resulting file should be accessible through
++the `org-export-stack' interface.
++
++When optional argument SUBTREEP is non-nil, export the sub-tree
++at point, extracting information from the headline properties
++first.
++
++When optional argument VISIBLE-ONLY is non-nil, don't export
++contents of hidden elements.
++
++When optional argument BODY-ONLY is non-nil, only write code
++between \"\\begin{document}\" and \"\\end{document}\".
++
++EXT-PLIST, when provided, is a property list with external
++parameters overriding Org default settings, but still inferior to
++file-local settings.
++
++Return PDF file's name."
++  (interactive)
++  (let ((outfile (org-export-output-file-name ".tex" subtreep)))
++    (org-export-to-file 'altacv outfile
++      async subtreep visible-only body-only ext-plist
++      #'org-latex-compile)))
++
+ ;;; Define Back-End
+ (org-export-define-derived-backend 'altacv 'latex
++ :menu-entry
++ '(?l 1
++     ((?t "As Alta pdf" org-altacv-export-to-pdf)
++     (?T "As Alta pdf and open"
++             (lambda
++             (a s v b)
++             ;; We should be able to do this without running it twice
++             (if a
++                     (org-altacv-export-to-pdf t s v b)
++             (org-open-file
++                     (org-altacv-export-to-pdf nil s v b))))))
++     )
+   :options-alist
+   '((:latex-class "LATEX_CLASS" nil "altacv" t)
+     (:cvstyle "CVSTYLE" nil "classic" t)
+@@ -62,6 +108,7 @@
+     (:photo "PHOTO" nil nil parse)
+     (:gitlab "GITLAB" nil nil parse)
+     (:github "GITHUB" nil nil parse)
++    (:quote "QUOTE" nil nil parse)
+     (:linkedin "LINKEDIN" nil nil parse)
+     (:with-email nil "email" t t)
+     (:latex-title-command nil nil "\\begin{fullwidth}\n\\makecvheader\n\\end{fullwidth}")
+@@ -126,6 +173,12 @@ holding export options."
+      (let ((template (plist-get info :latex-hyperref-template)))
+        (and (stringp template)
+             (format-spec template spec)))
++
++     ;; quote
++     (let ((quote (org-export-data (plist-get info :quote) info)))
++       (when (org-string-nw-p quote)
++         (format "\\quote{%s}\n" quote)))
++
+      ;; Document start.
+      "\\begin{document}\n\n"
+      ;; Author.
+@@ -169,6 +222,7 @@ holding export options."
+                   (:linkedin "linkedin"))
+                 "")
+      "}\n"
++
+      ;; Title command.
+      (let* ((title-command (plist-get info :latex-title-command))
+             (command (and (stringp title-command)
+@@ -188,7 +242,6 @@ holding export options."
+      ;; Document end.
+      "\\end{document}")))
+ 
+-
+ (defun org-altacv--format-cventry (headline contents info)
+   "Format HEADLINE as as cventry.
+ CONTENTS holds the contents of the headline.  INFO is a plist used
+diff --git a/ox-awesomecv.el b/ox-awesomecv.el
+index 937308a..1299210 100644
+--- a/ox-awesomecv.el
++++ b/ox-awesomecv.el
+@@ -50,11 +50,54 @@
+   :group 'org-export
+   :version "25.3")
+ 
++(defun org-awesome-export-to-pdf
++    (&optional async subtreep visible-only body-only ext-plist)
++  "Export current buffer to LaTeX then process through to PDF.
++
++If narrowing is active in the current buffer, only export its
++narrowed part.
++
++If a region is active, export that region.
++
++A non-nil optional argument ASYNC means the process should happen
++asynchronously.  The resulting file should be accessible through
++the `org-export-stack' interface.
++
++When optional argument SUBTREEP is non-nil, export the sub-tree
++at point, extracting information from the headline properties
++first.
++
++When optional argument VISIBLE-ONLY is non-nil, don't export
++contents of hidden elements.
++
++When optional argument BODY-ONLY is non-nil, only write code
++between \"\\begin{document}\" and \"\\end{document}\".
++
++EXT-PLIST, when provided, is a property list with external
++parameters overriding Org default settings, but still inferior to
++file-local settings.
++
++Return PDF file's name."
++  (interactive)
++  (let ((outfile (org-export-output-file-name ".tex" subtreep)))
++    (org-export-to-file 'awesomecv outfile
++      async subtreep visible-only body-only ext-plist
++      #'org-latex-compile)))
++
+ ;;; Define Back-End
+ (org-export-define-derived-backend 'awesomecv 'latex
+-;  :menu-entry
+-;  (?l 1
+-;      ((?w "AwesomeCV format" (lambda (a s v b) (org-export-to-file 'awesomecv (org-export-output-file-name ".tex"))))))
++ :menu-entry
++ '(?l 1
++     ((?a "As Awesome pdf" org-awesome-export-to-pdf)
++     (?A "As Awesome pdf and open"
++             (lambda
++             (a s v b)
++             ;; We should be able to do this without running it twice
++             (if a
++                     (org-awesome-export-to-pdf t s v b)
++             (org-open-file
++                     (org-awesome-export-to-pdf nil s v b))))))
++     )
+   :options-alist
+   '((:latex-class "LATEX_CLASS" nil "awesomecv" t)
+     (:cvstyle "CVSTYLE" nil "classic" t)
+@@ -77,7 +120,7 @@
+     (:fontdir "FONTDIR" nil "fonts/" t)
+     (:latex-title-command "LATEX_TITLE" nil "\\makecvheader" t)
+     (:cvhighlights "CVHIGHLIGHTS" nil "true" t)
+-    (:quote "QUOTE" nil nil t)
++    (:quote "QUOTE" nil nil parse)
+     (:firstname "FIRSTNAME" nil nil t)
+     (:lastname "LASTNAME" nil nil t)
+     (:cvfooter_left "CVFOOTER_LEFT" nil nil t)
+@@ -183,6 +226,11 @@ holding export options."
+             (so-name (when so-list (cadr so-list))))
+        (when (and (org-string-nw-p so-id) (org-string-nw-p so-name))
+          (format "\\stackoverflow{%s}{%s}\n" so-id so-name)))
++     ;;
++     ;; quote
++     (let ((quote (org-export-data (plist-get info :quote) info)))
++       (when (org-string-nw-p quote)
++         (format "\\quote{%s}\n" quote)))
+ 
+      ;; Hyperref options.
+      (let ((template (plist-get info :latex-hyperref-template)))
+@@ -275,9 +323,9 @@ as a communication channel."
+       )
+      ((string= entrytype "cventry")
+       (format "\n\\cventry\n{%s}\n{%s}\n{%s}\n{%s}\n{%s%s}\n"
++              title
+               employer
+               location
+-              title
+               (org-cv-utils--format-time-window from-date to-date)
+               (org-awesomecv--cventry-right-img-code right-img)
+               contents))
+@@ -290,8 +338,8 @@ as a communication channel."
+      ((string= entrytype "cvschool")
+       (format "\n\\cventry\n{%s}\n{%s}\n{%s}\n{%s}\n{%s%s}\n"
+               title
+-              location
+               employer
++              location
+               (org-cv-utils--format-time-window from-date to-date)
+               (org-awesomecv--cventry-right-img-code right-img)
+               contents))

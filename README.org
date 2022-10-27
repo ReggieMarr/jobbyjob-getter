@@ -1,0 +1,44 @@
+* [[https://tenor.com/UCzy.gif][Jobby Job]]
+** What is this
+This is a repo used to track my resume and associated latex/elisp so that I can get me a real gud jobby job.
+This is heavily inspired by [[https://gitlab.com/Titan-C/org-cv][Org CV]] and [[https://www.aidanscannell.com/post/org-mode-resume/][this blog post.]]
+I really like the idea of writing my resume (and other documents) in org with minimal latex in the document.
+Eventualy I'd like to create a common elisp layer since it doesn't really seem like each template uses a lot of potentially common code.
+** Config
+I use emacs to generate this stuff
+*** Dependencies
++ Emacs (the [[https://github.com/doomemacs/doomemacs][doomed]] kind).
++ xelatex (to compile awesome-fonts)
++ The following manjaro latex-related packages:
+  - ~texlive-formatsextra~
+  - ~texlive-fontsextra~
+  - ~latex-sourcesanspro-font~
+  - ~texlive-fonts-fontawesome~
+  - ~texlive-latexextra~
+  - ~texlive-bibtexextra~
+  - ~texlive-core~
+*** Elisp
++ ~packages.el~
+    #+begin_src elisp
+        (package! ox-moderncv
+        :recipe (:host gitlab :repo "Titan-C/org-cv"))
+    #+end_src
+    Note that there are a couple patches I've applied to this which I've tracked as [[file:export_and_quote.patch][export_and_quote.patch]]
++ ~config.el~
+    #+begin_src elisp
+    (use-package! ox-moderncv
+        :load-path "~/.emacs.d/.local/straight/repos/org-cv/"
+        :init (require 'ox-moderncv))
+
+    (use-package! ox-awesomecv
+        :load-path "~/.emacs.d/.local/straight/repos/org-cv/"
+        :init (require 'ox-awesomecv))
+
+    (use-package! ox-altacv
+        :load-path "~/.emacs.d/.local/straight/repos/org-cv/"
+        :init (require 'ox-moderncv))
+
+    #+end_src
+*** Latex
+I use [[https://github.com/posquit0/Awesome-CV][awesomecv]] and [[https://github.com/Titan-C/moderncv][moderncv]] as two pretty sick templates.
+They need to be symlinked to the same directory as resume.org for this to work.
