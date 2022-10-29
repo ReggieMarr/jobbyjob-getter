@@ -3,28 +3,19 @@
 #+EMAIL: reginald.t.marr@gmail.com
 #+ADDRESS: Hamilton, ON
 #+MOBILE: +1 519 410 9617
-#+LINKEDIN: reginald-marr-0b28a8a3
+#+LINKEDIN: reginald-marr-0b28a8a3 "Reginald Marr"
 #+SUBTITLE: "Everything is mutable"
 #+GITHUB: reggiemarr
 #+STACKOVERFLOW: 3274010 reggiemarr
 
-#+EXPORT_FILE_NAME: ./reginald_marr-resume.pdf
 #+OPTIONS: toc:nil H:10 tex:t
 #+STARTUP: hidestars indent
 #+LaTeX_CLASS_OPTIONS: [a4paper,ragged2e,withhyper]
 #+LaTeX_HEADER: \usepackage{enumitem}
 #+LATEX_COMPILER: xelatex
-# CV color - options include: 'awesome-red (default), 'awesome-emerald,
-# 'awesome-skyblue', 'awesome-pink', 'awesome-orange', 'awesome-nephritis',
-# 'awesome-concrete' and 'awesome-darknight', plus any standard color names.
-# #+CVCOLOR: awesome-red
-# #+LATEX_CLASS: awesomecv
-# #+LaTeX_HEADER: \setlist{leftmargin=0.25in,nosep}
-# #+LaTeX_HEADER: \hypersetup{colorlinks=true, urlcolor={awesome-darknight}}
 
 #+LATEX_CLASS: altacv
 #+LATEX_HEADER: \geometry{left=1cm,right=9cm,marginparwidth=8cm,marginparsep=0.5cm,top=1.25cm,bottom=1.25cm}
-# #+CVCOLOR: gray
 
 #+latex: \marginpar{
 * About Me
@@ -50,7 +41,7 @@ By doing this I am able to develop robust solutions which solve not just the spe
 + Level 600 Project
   Developed a neural network and network industrial system for modeling and controlling the distillation of ethanol.
 
-+ Completed 16 Months Co-Op
++ Completed 16 Months of Co-Op
 ** AdvDip - [[https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533][Chemical Engineering Technology]]
 :PROPERTIES:
 :CV_ENV: cventry
