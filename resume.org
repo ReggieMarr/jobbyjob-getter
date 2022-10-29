@@ -12,6 +12,7 @@
 #+STARTUP: hidestars indent
 #+LaTeX_CLASS_OPTIONS: [a4paper,ragged2e,withhyper]
 #+LaTeX_HEADER: \usepackage{enumitem}
+#+LaTeX_HEADER: \usepackage[default]{lato}
 #+LATEX_COMPILER: xelatex
 
 #+LATEX_CLASS: altacv
