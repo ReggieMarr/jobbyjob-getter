@@ -1,10 +1,10 @@
-#+TITLE: Embedded Software Developer
+#+TITLE: Embedded Software Designer
 #+AUTHOR: Reginald Marr
 #+EMAIL: reginald.t.marr@gmail.com
 #+ADDRESS: Hamilton, ON
-#+MOBILE: +1 519 410 9617
-#+LINKEDIN: reginald-marr-0b28a8a3 "Reginald Marr"
-#+SUBTITLE: "Everything is mutable"
+#+MOBILE: 519 410 9617
+#+LINKEDIN: reginald-marr-0b28a8a3 "Reg Marr"
+#+QUOTE: "Everything is mutable"
 #+GITHUB: reggiemarr
 #+STACKOVERFLOW: 3274010 reggiemarr
 
@@ -16,7 +16,7 @@
 #+LATEX_COMPILER: xelatex
 
 #+LATEX_CLASS: altacv
-#+LATEX_HEADER: \geometry{left=1cm,right=9cm,marginparwidth=8cm,marginparsep=0.5cm,top=1.25cm,bottom=1.25cm}
+#+LATEX_HEADER: \geometry{left=0.5cm,right=9cm,marginparwidth=8.5cm,marginparsep=0.3cm,top=1.0cm,bottom=1.0cm}
 
 #+latex: \marginpar{
 * About Me
@@ -26,7 +26,7 @@ Additionally I pride myself on my ability to grind away at complex problems, bre
 
 By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.
 
-* Education & Certifications
+* Education
 
 ** B .Tech - [[https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology][Process Automation]]
 :PROPERTIES:
@@ -52,7 +52,7 @@ By doing this I am able to develop robust solutions which solve not just the spe
 :EMPLOYER: Mohawk College
 :END:
 
-** [[https://acbsp.org/?][Certificate in Business Management]]
+** Certificate - [[https://acbsp.org/?][Business Management]]
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM: <2013-09-01>
@@ -63,9 +63,9 @@ By doing this I am able to develop robust solutions which solve not just the spe
 
 * Skills
 + Languages
-    C/C++, Rust, Python, SQL, Matlab
+    C/C++, Rust, Python, SQL, Matlab, Elisp
 + Developer Tools
-    Git, Docker, Jenkins, Jira, Ansible
+    Git, Docker, Jenkins, Jira, Ansible, Kubernetes
 + Frameworks
     threadX, freeRTOS, POSIX, Emacs
 
@@ -82,11 +82,11 @@ By doing this I am able to develop robust solutions which solve not just the spe
 :LABEL: L3Harris
 :END:
 
-+ Designed a python/rust framework to support automated testing and analysis of MX systems.
++ Designed a common driver framework which provided modular device orchestration for multiple projects.
++ Designed a python/rust framework to support automated testing and analysis of embedded systems.
 + Developed capabilities to streamline conversion of text-based documentation into PDF, Powerpoint and static website formats.
-+ Led software development/project coordination for both NPI and sustaining.
-+ Collaborated across engineering disciplines to develop and refine lens and laser sub-assembly for advanced EO products.
-+ Performed collection and analysis of complex systems during in-field flight tests.
++ Collaborated across engineering disciplines to develop and refine lens and laser sub-assemblies.
++ Provided collection and analysis support during in-field flight tests.
 
 ** [[https://www.l3harris.com/all-capabilities/wescam-mx-series][Embedded Software Designer - Sustaining]]
 :PROPERTIES:
@@ -101,9 +101,9 @@ By doing this I am able to develop robust solutions which solve not just the spe
 + Acted as inter-department liaison to solve logistical issues for customer deliveries.
 + Developed automation tooling using python and web-based technologies to optimized various workflows.
 + Generated documentation and improvement proposals for legacy software components.
-+ Utilized TDD training to develop robust bugfixes and improvements to legacy software.
++ Utilized TDD best practices to develop bugfixes and improvements to legacy software.
 
-** [[https://www.eng.mcmaster.ca/sept/practice/learning-factory][Tech Assistant]]
+** [[https://www.eng.mcmaster.ca/sept/practice/learning-factory][Tech Assistant (Co-Op)]]
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM:     <2017-05-01>
@@ -115,11 +115,11 @@ By doing this I am able to develop robust solutions which solve not just the spe
 + Responsible for process design, DCS system integration, hardware installation, and HMI development.
 + Developed a product to track part/tool utilization using custom RFID hardware developing software using embedded C, C#, and MySQL.
 
-** [[https://www.directenergy.com/about/brands/airtron][Project Coordinator]]
+** [[https://www.directenergy.com/about/brands/airtron][Project Coordinator (Co-Op)]]
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM:     <2016-02-01>
-:TO:     <2016-09-01>
+:TO:     <2016-08-30>
 :LOCATION: Missisauga, Ontario
 :EMPLOYER: Airtron Canada
 :END:
