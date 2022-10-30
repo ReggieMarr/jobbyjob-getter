@@ -1,3 +1,5 @@
+% Created 2022-10-29 Sat 09:46
+% Intended LaTeX compiler: xelatex
 \documentclass[a4paper,ragged2e,withhyper]{altacv}
 \usepackage{graphicx}
 \usepackage{longtable}
@@ -9,6 +11,7 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage[default]{lato}
 \geometry{left=0.5cm,right=9cm,marginparwidth=8.5cm,marginparsep=0.3cm,top=1.0cm,bottom=1.0cm}
 % Change the colours if you want to
 \definecolor{awesome-emerald}{HTML}{00A388}
@@ -23,47 +26,46 @@
 \colorlet{heading}{awesome}
 \colorlet{accent}{awesome-opposite}
 \colorlet{emphasis}{awesome-darknight}
-\usepackage[default]{lato}
-
+\colorlet{body}{dark-gray}
 \hypersetup{
  colorlinks=true,
  urlcolor=awesome-concrete,
  }
-\tagline{Embedded Software Developer}
-\quote{``Everything is mutable.''}
+\tagline{Embedded Software Designer}
+\quote{``Everything is mutable''}
 \hypersetup{
  pdfauthor={Reginald Marr},
- pdftitle={Embedded Software Developer},
+ pdftitle={Embedded Software Designer},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Reg Marr},
+ pdfcreator={Reg Marr}, 
  pdflang={English}}
 \begin{document}
 
 \firstname{Reginald}
 \lastname{Marr}
 \personalinfo{
-\location{Hamilton, ON}|
-\email{reginald.t.marr@gmail.com}|
-\phone{519 410 9617}|
-\github{reggiemarr}|
-\linkedin{reginald-marr-0b28a8a3}|
+\location{Hamilton, Ontario}
+\email{reginald.t.marr@gmail.com}
+\phone{519 410 9617}
+\github{reggiemarr}
 \stackoverflow{3274010}
+\linkedin{reginald-marr-0b28a8a3}
 }
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
 \marginpar{
 \section{About Me}
-\label{sec:orgc6d9934}
+\label{sec:org7364919}
 I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.\\
 
-Additionally I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.\\
+Additionally, I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.\\
 
 By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.\\
 
 \section{Education}
-\label{sec:orgfe4013d}
+\label{sec:org76ce198}
 
 
 \cvevent{B.Tech - \href{https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology}{Automation Engineering Technology}}{McMaster University}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}\begin{itemize}
@@ -85,27 +87,27 @@ Developed a neural network and network industrial system for modeling and contro
 \cvevent{Certificate - \href{https://acbsp.org/?}{Business Management}}{Mohawk College}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}
 
 \section{Skills}
-\label{sec:orgce0650d}
+\label{sec:orgdcbbe64}
 \begin{itemize}
 \item Languages\\
-C, C++, Rust, Python, SQL, Matlab\\
+C/C++, Rust, Python, SQL, MATLAB, Elisp\\
 \item Developer Tools\\
-Git, Docker, Jenkins, Jira, Ansible\\
+Git, Docker, Jenkins, Jira, Ansible, Kubernetes\\
 \item Frameworks\\
-threadX, freeRTOS, POSIX, Emacs\\
+threadX, freeRTOS, POSIX, Emacs, Linux\\
 \end{itemize}
 
 }
 \section{Experience}
-\label{sec:org12dd237}
+\label{sec:org71d5b53}
 
 
 \cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-series}{Embedded Software Designer - New Product Integration}}{L3Harris-Wescam}{Jan 2020 -- Oct 2022}{Hamilton, Ontario}\begin{itemize}
-\item Designed a python/rust framework to support automated testing and analysis of MX systems.\\
+\item Designed a common driver framework which provided modular device orchestration for multiple projects.\\
+\item Designed a python/rust framework to support automated testing and analysis of embedded systems.\\
 \item Developed capabilities to streamline conversion of text-based documentation into PDF, Powerpoint and static website formats.\\
-\item Led software development/project coordination for both NPI and sustaining.\\
-\item Collaborated across engineering disciplines to develop and refine lens and laser sub-assembly for advanced EO products.\\
-\item Performed collection and analysis of complex systems during in-field flight tests.\\
+\item Collaborated across engineering disciplines to develop and refine lens and laser sub-assemblies.\\
+\item Provided collection and analysis support during in-field flight tests.\\
 \end{itemize}
 
 \divider
@@ -116,22 +118,24 @@ threadX, freeRTOS, POSIX, Emacs\\
 \item Acted as inter-department liaison to solve logistical issues for customer deliveries.\\
 \item Developed automation tooling using python and web-based technologies to optimized various workflows.\\
 \item Generated documentation and improvement proposals for legacy software components.\\
-\item Utilized TDD training to develop robust bugfixes and improvements to legacy software.\\
+\item Utilized TDD best practices to develop bugfixes and improvements to legacy software.\\
 \end{itemize}
 
 \divider
 
 
-\cvevent{\href{https://www.eng.mcmaster.ca/sept/practice/learning-factory}{Tech Assistant}}{McMaster University - The Learning Factory}{May 2017 -- Aug 2017}{Hamilton, Ontario}\begin{itemize}
+\cvevent{\href{https://www.eng.mcmaster.ca/sept/practice/learning-factory}{Tech Assistant (Co-Op)}}{McMaster University - The Learning Factory}{May 2017 -- Aug 2017}{Hamilton, Ontario}\begin{itemize}
+\item Summarized best-in-industry practices for improvement proposals.\\
+\item Provided estimation support for various full-scale systems.\\
 \item Responsible for process design, DCS system integration, hardware installation, and HMI development.\\
-\item Developed a product to track part/tool utilization using custom RFID hardware developing software using embedded C, C\#, and MySQL.\\
+\item Designed part/tool tracking system using custom RFID hardware and software developed for coordination between desktop and embedded targets via C, C\#, and MySQL.\\
 \end{itemize}
 
 \divider
 
 
-\cvevent{\href{https://www.directenergy.com/about/brands/airtron}{Project Coordinator}}{Airtron Canada}{Feb 2016 -- Sep 2016}{Missisauga, Ontario}\begin{itemize}
-\item Designed and developed raspberry pi based relay to provide logging of environmental variables using python and custom REST API.\\
+\cvevent{\href{https://www.directenergy.com/about/brands/airtron}{Project Coordinator (Co-Op)}}{Airtron Canada}{Feb 2016 -- Aug 2016}{Missisauga, Ontario}\begin{itemize}
+\item Designed and developed linux based relay to provide logging of environmental variables using python and custom REST API.\\
 \item Assisted in creating a proposal for a biogas cogen to convert food and animal waste into low grade electricity and high grade heat.\\
 \item Provided estimation support on energy services contracts involving the offset of GHG's via load balancing, HVAC system improvements, and more.\\
 \end{itemize}
