@@ -1,10 +1,11 @@
 #+TITLE: Embedded Software Designer
+#+SUBTITLE: "Everything is mutable"
 #+AUTHOR: Reginald Marr
 #+EMAIL: reginald.t.marr@gmail.com
 #+ADDRESS: Hamilton, Ontario
 #+MOBILE: 519 410 9617
 #+LINKEDIN: reginald-marr-0b28a8a3
-#+QUOTE: "Everything is mutable"
+# #+QUOTE: "Everything is mutable"
 #+GITHUB: reggiemarr
 #+STACKOVERFLOW: 3274010
 
@@ -19,7 +20,8 @@
 #+LATEX_HEADER: \geometry{left=0.5cm,right=9cm,marginparwidth=8.5cm,marginparsep=0.3cm,top=1.0cm,bottom=1.0cm}
 
 #+latex: \marginpar{
-* About Me
+
+* About Me 🛶 :canoe:
 I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.
 
 Additionally, I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.
@@ -65,7 +67,7 @@ By doing this I am able to develop robust solutions which solve not just the spe
 + Languages
     C/C++, Rust, Python, SQL, MATLAB, Elisp
 + Developer Tools
-    Git, Docker, Jenkins, Jira, Ansible, Kubernetes
+    Git, Docker, Jenkins, Jira, Ansible, GoogleTest
 + Frameworks
     threadX, freeRTOS, POSIX, Emacs, Linux
 

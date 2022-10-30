@@ -42,3 +42,8 @@ I use emacs to generate this stuff
 *** Latex
 I use [[https://github.com/posquit0/Awesome-CV][awesomecv]] and [[https://github.com/Titan-C/moderncv][moderncv]] as two pretty sick templates.
 They need to be symlinked to the same directory as resume.org for this to work.
+
+** Emoticons
+# TODO Give credit to icon authors
+To get the little icons next to the "About Me" section I first found some flaticons that were downloaded to png
+Then I followed [[https://www.youtube.com/watch?v=HPGvrxjT7aY][this tutorial]] to convert them into svgs using gimp.

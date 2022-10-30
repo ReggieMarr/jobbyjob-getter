@@ -1,4 +1,4 @@
-% Created 2022-10-29 Sat 09:46
+% Created 2022-10-30 Sun 16:47
 % Intended LaTeX compiler: xelatex
 \documentclass[a4paper,ragged2e,withhyper]{altacv}
 \usepackage{graphicx}
@@ -12,52 +12,96 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage[default]{lato}
+\usepackage{graphicx}
 \geometry{left=0.5cm,right=9cm,marginparwidth=8.5cm,marginparsep=0.3cm,top=1.0cm,bottom=1.0cm}
 % Change the colours if you want to
 \definecolor{awesome-emerald}{HTML}{00A388}
 \definecolor{awesome-skyblue}{HTML}{0395DE}
-\definecolor{awesome-red}{HTML}{DC3522}
 \definecolor{awesome-pink}{HTML}{EF4089}
 \definecolor{awesome-orange}{HTML}{FF6138}
 \definecolor{awesome-nephritis}{HTML}{27AE60}
-\definecolor{awesome-concrete}{HTML}{95A5A6}
+\definecolor{awesome-red}{HTML}{DC3522}
 \definecolor{awesome-darknight}{HTML}{131A28}
+\definecolor{awesome-opposite}{HTML}{E45D4D}
 \colorlet{awesome}{awesome-red}
-\colorlet{heading}{awesome}
 \colorlet{accent}{awesome-opposite}
+\colorlet{heading}{awesome}
 \colorlet{emphasis}{awesome-darknight}
-\colorlet{body}{dark-gray}
+\colorlet{body}{black!80!white}
 \hypersetup{
- colorlinks=true,
- urlcolor=awesome-concrete,
+    colorlinks=true,
+    urlcolor={awesome-concrete},
+    linkbordercolor=awesome-emerald,% hyperlink borders will be red
  }
-\tagline{Embedded Software Designer}
-\quote{``Everything is mutable''}
+\tagline{Embedded Software Designer\\\medskip
+\large ``Everything is mutable''}
 \hypersetup{
  pdfauthor={Reginald Marr},
  pdftitle={Embedded Software Designer},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Reg Marr}, 
  pdflang={English}}
 \begin{document}
+
+\DeclareRobustCommand{\canoe}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{canoe}%
+  \endgroup
+}
+
+\DeclareRobustCommand{\violin}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{violin}%
+  \endgroup
+}
+
+\DeclareRobustCommand{\hockey}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{hockey}%
+  \endgroup
+}
+
+\DeclareRobustCommand{\snowboard}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{snowboard}%
+  \endgroup
+}
+
+\DeclareRobustCommand{\tent}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{tent}%
+  \endgroup
+}
+
+\DeclareRobustCommand{\sailing-boat}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{sailing-boat}%
+  \endgroup
+}
+
+\DeclareRobustCommand{\mandolin}{%
+  \begingroup\normalfont
+  \includegraphics[height=\fontcharht\font`\B]{mandolin}%
+  \endgroup
+}
+
 
 \firstname{Reginald}
 \lastname{Marr}
 \personalinfo{
-\location{Hamilton, Ontario}
+\homeaddress{Hamilton, Ontario}
 \email{reginald.t.marr@gmail.com}
 \phone{519 410 9617}
 \github{reggiemarr}
-\stackoverflow{3274010}
 \linkedin{reginald-marr-0b28a8a3}
 }
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
 \marginpar{
-\section{About Me}
-\label{sec:org7364919}
+
+\section{About Me {\raggedright \hockey{} \canoe{} \tent{} \snowboard{} \sailing-boat{} \mandolin{} \violin{}}}
+\label{sec:org44cd4ed}
 I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.\\
 
 Additionally, I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.\\
@@ -65,7 +109,7 @@ Additionally, I pride myself on my ability to grind away at complex problems, br
 By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.\\
 
 \section{Education}
-\label{sec:org76ce198}
+\label{sec:org2aee0c0}
 
 
 \cvevent{B.Tech - \href{https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology}{Automation Engineering Technology}}{McMaster University}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}\begin{itemize}
@@ -87,19 +131,19 @@ Developed a neural network and network industrial system for modeling and contro
 \cvevent{Certificate - \href{https://acbsp.org/?}{Business Management}}{Mohawk College}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}
 
 \section{Skills}
-\label{sec:orgdcbbe64}
+\label{sec:orgdad1287}
 \begin{itemize}
 \item Languages\\
 C/C++, Rust, Python, SQL, MATLAB, Elisp\\
 \item Developer Tools\\
-Git, Docker, Jenkins, Jira, Ansible, Kubernetes\\
+Git, Docker, Jenkins, Jira, Ansible, GoogleTest\\
 \item Frameworks\\
 threadX, freeRTOS, POSIX, Emacs, Linux\\
 \end{itemize}
 
 }
 \section{Experience}
-\label{sec:org71d5b53}
+\label{sec:org7b8293c}
 
 
 \cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-series}{Embedded Software Designer - New Product Integration}}{L3Harris-Wescam}{Jan 2020 -- Oct 2022}{Hamilton, Ontario}\begin{itemize}
