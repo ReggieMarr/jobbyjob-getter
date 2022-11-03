@@ -4,15 +4,16 @@
 #+EMAIL: reginald.t.marr@gmail.com
 #+ADDRESS: Hamilton, Ontario
 #+MOBILE: 519 410 9617
-#+LINKEDIN: reginald-marr-0b28a8a3
-# #+QUOTE: "Everything is mutable"
+#+LINKEDIN: reginald-marr-0b28a8a3 Reginald Marr
+#+QUOTE: "Everything is mutable"
 #+GITHUB: reggiemarr
-#+STACKOVERFLOW: 3274010
+#+STACKOVERFLOW: 3274010 Reginald Marr
 
 #+OPTIONS: toc:nil H:10 tex:t
 #+STARTUP: hidestars indent
 #+LaTeX_CLASS_OPTIONS: [a4paper,ragged2e,withhyper]
 #+LaTeX_HEADER: \usepackage{enumitem}
+#+LaTeX_HEADER: \usepackage[default]{lato}
 #+LaTeX_HEADER: \usepackage[default]{lato}
 #+LATEX_COMPILER: xelatex
 
@@ -21,7 +22,11 @@
 
 #+latex: \marginpar{
 
-* About Me 🛶 :canoe:
+* About Me
+:PROPERTIES:
+:CV_ENV: cventry
+:EMOTICON_DIR: McMaster University
+:END:
 I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.
 
 Additionally, I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.
