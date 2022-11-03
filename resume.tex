@@ -23,85 +23,61 @@
 \definecolor{awesome-red}{HTML}{DC3522}
 \definecolor{awesome-darknight}{HTML}{131A28}
 \definecolor{awesome-opposite}{HTML}{E45D4D}
+\definecolor{awesome-concrete}{HTML}{95A5A6}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{5D5D5D}
+
 \colorlet{awesome}{awesome-red}
 \colorlet{accent}{awesome-opposite}
 \colorlet{heading}{awesome}
 \colorlet{emphasis}{awesome-darknight}
-\colorlet{body}{black!80!white}
-\hypersetup{
-    colorlinks=true,
-    urlcolor={awesome-concrete},
-    linkbordercolor=awesome-emerald,% hyperlink borders will be red
- }
+\colorlet{body}{gray}
 \hypersetup{
  pdfauthor={Reginald Marr},
  pdftitle={Embedded Software Designer},
+ urlbordercolor=awesome-skyblue,        % color of external links
+ pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
  pdfkeywords={},
  pdfsubject={},
  pdflang={English}}
+
 \begin{document}
 
-\DeclareRobustCommand{\canoe}{%
-  \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{canoe}%
-  \endgroup
+\graphicspath{
+    {emoticons/}
 }
 
-\DeclareRobustCommand{\violin}{%
+\DeclareRobustCommand{\addEmoticon}[1]{%
   \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{violin}%
-  \endgroup
-}
-
-\DeclareRobustCommand{\hockey}{%
-  \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{hockey}%
-  \endgroup
-}
-
-\DeclareRobustCommand{\snowboard}{%
-  \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{snowboard}%
-  \endgroup
-}
-
-\DeclareRobustCommand{\tent}{%
-  \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{tent}%
-  \endgroup
-}
-
-\DeclareRobustCommand{\sailing-boat}{%
-  \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{sailing-boat}%
-  \endgroup
-}
-
-\DeclareRobustCommand{\mandolin}{%
-  \begingroup\normalfont
-  \includegraphics[height=\fontcharht\font`\B]{mandolin}%
+  \includegraphics[height=1.75\fontcharht\font`\A]{#1}%
   \endgroup
 }
 
 \tagline{Embedded Software Designer\\\medskip
 \large\color{accent} ``Everything is mutable''}
 
+\myquote{``Test Me''}
+
 \firstname{Reginald}
 \lastname{Marr}
 \personalinfo{
-\homeaddress{Hamilton, Ontario}
+\location{Hamilton, Ontario}
 \email{reginald.t.marr@gmail.com}
 \phone{519 410 9617}
 \github{reggiemarr}
-\linkedin{reginald-marr-0b28a8a3}
+\linkedin{reginald-marr-0b28a8a3}{Reginald Marr}
+\stackoverflow{3274010}{Reginald Marr}
 }
+
 
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
 \marginpar{
 
-\section{About Me {\raggedright \hockey{} \canoe{} \tent{} \snowboard{} \sailing-boat{} \mandolin{} \violin{}}}
+
+
+\section{About Me \hspace*{\fill} \addEmoticon{canoe} \addEmoticon{tent} \addEmoticon{sailing-boat} \addEmoticon{mandolin} \addEmoticon{snowboard} \addEmoticon{hockey}}
 \label{sec:org44cd4ed}
 I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.\\
 
