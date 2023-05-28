@@ -49,111 +49,109 @@
 
 \DeclareRobustCommand{\addEmoticon}[1]{%
   \begingroup\normalfont
-  \includegraphics[height=1.75\fontcharht\font`\A]{#1}%
+  \includegraphics[height=1.6\fontcharht\font`\A]{#1}%
   \endgroup
 }
 
-\tagline{Embedded Software Designer\\\medskip
-\large\color{accent} ``Everything is mutable''}
+\tagline{\textit{Embedded Software Designer}\\\medskip
+\large\color{accent} \textit{``Everything is mutable''}}
 
-\firstname{Reginald}
+\firstname{Reginald }
 \lastname{Marr}
-\personalinfo{
-\location{Hamilton, Ontario}
-\email{reginald.t.marr@gmail.com}
-\phone{519 410 9617}
-\github{reggiemarr}
-\linkedin{reginald-marr-0b28a8a3}{Reginald Marr}
-\stackoverflow{3274010}{Reginald Marr}
+\personalinfo{%
+    \location{Hamilton, Ontario}
+    \email{reginald.t.marr@gmail.com}
+    \phone{519 410 9617}
+    \github{reggiemarr}
+    \linkedin{reginald-marr-0b28a8a3}
+    \stackoverflow{3274010/Reginald Marr}
 }
 
+% To make the header centered within the doc
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
+
 \marginpar{\vspace{-1em}
 
-
-\section{About Me \hspace*{\fill} \addEmoticon{canoe} \addEmoticon{tent} \addEmoticon{sailing-boat} \addEmoticon{mandolin} \addEmoticon{snowboard} \addEmoticon{hockey}}
+\cvsection{About Me \hspace*{\fill} \addEmoticon{canoe} \addEmoticon{tent} \addEmoticon{sailing-boat} \addEmoticon{violin} \addEmoticon{snowboard} \addEmoticon{hockey}}
 \label{sec:org44cd4ed}
-I am first and foremost most proud of my ability to collaborate with peers across a variety of disciplines (and a variety of physical locations) to produce something better than the sum of our individual contributions.\\
+With a career steeped in technological innovation, I've learned the intricacies of project success and potential pitfalls. I pride myself on collaborating with diverse teams, creating something greater the sum of our individual contributions.\
 
-Additionally, I pride myself on my ability to grind away at complex problems, break them down, and define their atomic components.\\
+An analytical thinker, I deconstruct complex problems to their core components, crafting solutions that are both robust and adaptable. This mindset has been pivotal in my professional projects and hobbies.\
 
-By doing this I am able to develop robust solutions which solve not just the specific task at hand but provide adaptability to solve the problem in a general sense.\\
+As I forge ahead in my career, my goal is to leverage these skills to further drive technological innovation.\
 
-\section{Education}
+\cvsection{Education}
 \label{sec:org2aee0c0}
 
+{\large\color{emphasis}{B.Tech - \href{https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology}{Automation Engineering Technology}}\par}
+\smallskip
+\textbf{\color{accent}{McMaster University/Mohawk College}}\par
+\smallskip
+{\faCalendar \hspace{0.5em} Sept 2013-Dec 2018}\hspace{0.5em}{\makebox[0.4\linewidth][l]{\faMapMarker\hspace{0.5em}{Hamilton, Ontario}}}\par
+\medskip
 
-\cvevent{B.Tech - \href{https://www.eng.mcmaster.ca/sept/programs/degree-options/btech/automation-engineering-technology}{Automation Engineering Technology}}{McMaster University}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}\begin{itemize}
-\item Capstone\\
-Developed G-Code Generator Cross platform application (Qt \& C++) from 3D CAD models for novel metal 3D printing process.\\
+Focused on automated systems, advanced control, robotics, and computer programming.
 
-\item Level 600 Project\\
-Developed a neural network and network industrial system for modeling and controlling the distillation of ethanol.\\
-
-\item Completed 16 Months of Co-Op\\
+\begin{itemize}
+  \item Capstone: Developed a cross-platform G-Code Generator application (Qt \& C++) for a novel 3D metal printing process.
+  \item Graduate-Level Project: Designed a neural network-controlled industrial system for ethanol distillation. Project typically reserved for master's students.
+  \item{\color{emphasis}{Adv.Dip - \href{https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533}{Chemical Engineering Technology}:}} Comprehensive knowledge of chemical process design, control, and optimization.
+  \item{\color{emphasis}{Certificate - \href{https://acbsp.org/?}{Business Management}:}} Studied core management and leadership principles, including financial management and marketing.
+  \item Co-Op Experience: 16 months of practical work.
 \end{itemize}
 
-\divider
-
-\cvevent{Adv.Dip - \href{https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533}{Chemical Engineering Technology}}{Mohawk College}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}
-\divider
-
-
-\cvevent{Certificate - \href{https://acbsp.org/?}{Business Management}}{Mohawk College}{Sep 2013 -- Jun 2018}{Hamilton, Ontario}
-
-\section{Skills}
+\cvsection{Skills}
 \label{sec:orgdad1287}
 \begin{itemize}
-\item Languages\\
-C/C++, Rust, Python, SQL, MATLAB, Elisp\\
-\item Developer Tools\\
-Git, Docker, Jenkins, Jira, Ansible, GoogleTest\\
-\item Frameworks\\
-threadX, freeRTOS, POSIX, Emacs, Linux\\
+\item \textbf{Programming Languages:} Proficient in C/C++, Rust, and Python, key languages for robotics software development. Familiar with SQL, MATLAB, and lisp.
+\item \textbf{Development Tools:} Experienced with Git, Docker, Jenkins, Jira, and Ansible for continuous integration, version control, and project management.
+\item \textbf{Operating Systems:} Comfortable working with Linux and real-time operating systems such as ThreadX and FreeRTOS.
+\item \textbf{Frameworks:} Knowledgeable in leveraging POSIX, ROS, and Xilinx based frameworks for efficient robotics software development.
+\item \textbf{Protocols:} Experienced with I2C, UART, SPI, DDS, Xinix's AXI Stream, and application-specific protocols for sensor and actuator integration.
+\item \textbf{Sensor Fusion and Localization:} Proficient in incorporating/fusing data from lidars, cameras, and IMUs.
 \end{itemize}
-
 }
-\section{Experience}
+\cvsection{Experience}
 \label{sec:org7b8293c}
 
 
 \cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-series}{Embedded Software Designer - New Product Integration}}{L3Harris-Wescam}{Jan 2020 -- Present}{Hamilton, Ontario}\begin{itemize}
-\item Designed a common driver framework which provided modular device orchestration for multiple projects.\\
-\item Designed a python/rust framework to support automated testing and analysis of embedded systems.\\
-\item Developed capabilities to streamline conversion of text-based documentation into PDF, Powerpoint and static website formats.\\
-\item Collaborated across engineering disciplines to develop and refine lens and laser sub-assemblies.\\
-\item Provided collection and analysis support during in-field flight tests.\\
+\item Received the 2023 EO Engineering and Technology Award as software lead for the development of the WCLIR project (a best in-class product with performance 3x the incumbant).
+\item Collaborate with engineering teams to refine lens and laser sub-assemblies (as product lead).
+\item Lead the development of data distribution pipelines, abstracting I2C, SPI, UART, and Xilinx AXIS Stream data for higher-level usage.
+\item Designed a common driver framework, providing modular device orchestration for multiple projects.
+\item Developed a Python/Rust framework for automated testing and analysis of embedded systems.
+\item Provide data analytics support for in-field flight tests.
 \end{itemize}
 
 \divider
-
 
 \cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-series}{Embedded Software Designer - Sustaining}}{L3Harris-Wescam}{May 2018 -- Dec 2019}{Hamilton, Ontario}\begin{itemize}
-\item Provided support triaging bugs found during pre-shipment verification.\\
-\item Acted as inter-department liaison to solve logistical issues for customer deliveries.\\
-\item Developed automation tooling using python and web-based technologies to optimized various workflows.\\
-\item Generated documentation and improvement proposals for legacy software components.\\
-\item Utilized TDD best practices to develop bugfixes and improvements to legacy software.\\
+\item Triaged bugs found during pre-shipment verification.
+\item Acted as liaison to solve customer delivery logistics.
+\item Developed automation tooling to optimize workflows.
+\item Created documentation and improvement proposals for legacy software.
+\item Streamlined conversion of text-based documentation to PDF, Powerpoint, and website formats.
+\item Utilized TDD best practices to develop bug fixes and improvements to legacy software.
 \end{itemize}
 
 \divider
-
 
 \cvevent{\href{https://www.eng.mcmaster.ca/sept/practice/learning-factory}{Tech Assistant (Co-Op)}}{McMaster University - The Learning Factory}{May 2017 -- Aug 2017}{Hamilton, Ontario}\begin{itemize}
-\item Summarized best-in-industry practices for improvement proposals.\\
-\item Provided estimation support for various full-scale systems.\\
-\item Responsible for process design, DCS system integration, hardware installation, and HMI development.\\
-\item Designed part/tool tracking system using custom RFID hardware and software developed for coordination between desktop and embedded targets via C, C\#, and MySQL.\\
+\item Proposed improvements based on best-in-industry practices.
+\item Provided estimation support for various full-scale systems.
+\item Designed and installed DCS system integration, hardware, and HMI.
+\item Developed RFID system for part/tool tracking, using C, C\#, and MySQL.
 \end{itemize}
 
 \divider
 
-
 \cvevent{\href{https://www.directenergy.com/about/brands/airtron}{Project Coordinator (Co-Op)}}{Airtron Canada}{Feb 2016 -- Aug 2016}{Missisauga, Ontario}\begin{itemize}
-\item Designed and developed linux based relay to provide logging of environmental variables using python and custom REST API.\\
-\item Assisted in creating a proposal for a biogas cogen to convert food and animal waste into low grade electricity and high grade heat.\\
-\item Provided estimation support on energy services contracts involving the offset of GHG's via load balancing, HVAC system improvements, and more.\\
+\item Developed Linux-based relay for environmental variable logging.
+\item Assisted in creating proposal for biogas cogen conversion.
+\item Provided estimation support for GHG offset contracts.
+\item Served as liaison to clients, summarizing project proposals and facilitating on-site data collection activities.
 \end{itemize}
 \end{document}

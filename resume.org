@@ -83,7 +83,6 @@ By doing this I am able to develop robust solutions which solve not just the spe
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM:     <2020-01-01>
-:TO:     <2022-10-24>
 :LOCATION: Hamilton, Ontario
 :EMPLOYER: L3Harris-Wescam
 :LABEL: L3Harris
