@@ -14,7 +14,7 @@
 \usepackage[default]{lato}
 \usepackage{graphicx}
 \usepackage[normalem]{ulem} % [normalem] prevents the package from changing the default behavior of `\emph` to underline.
-\geometry{left=0.5cm,right=9cm,marginparwidth=8.5cm,marginparsep=0.3cm,top=1.0cm,bottom=1.0cm}
+\geometry{left=0.5cm,right=11cm,marginparwidth=10.5cm,marginparsep=0.2cm,top=0.2cm,bottom=0.2cm}
 % Change the colours if you want to
 \definecolor{awesome-emerald}{HTML}{00A388}
 \definecolor{awesome-skyblue}{HTML}{0395DE}
@@ -73,16 +73,7 @@
 \makecvheader
 \end{fullwidth}
 
-\marginpar{\vspace{-0.75em}
-
-\cvsection{About Me \hspace*{\fill} \addEmoticon{canoe} \addEmoticon{tent} \addEmoticon{sailing-boat} \addEmoticon{violin} \addEmoticon{snowboard} \addEmoticon{hockey}}
-\label{sec:org44cd4ed}
-
-With a career steeped in technological innovation, I've learned the intricacies of project success and potential pitfalls. I pride myself on collaborating with diverse teams, creating something greater the sum of our individual contributions.
-
-An analytical thinker, I deconstruct complex problems to their core components, crafting solutions that are both robust and adaptable. This mindset has been pivotal in my professional projects and hobbies.
-
-As I forge ahead in my career, my goal is to leverage these skills to further drive technological innovation.
+\marginpar{\vspace{-0.6em}
 
 \cvsection{Education}
 \label{sec:org2aee0c0}
@@ -94,61 +85,74 @@ As I forge ahead in my career, my goal is to leverage these skills to further dr
 {\faCalendar Sept 2013-Dec 2018}\hspace{0.5em}{\makebox[0.4\linewidth][l]{\faMapMarker\hspace{0.5em}{Hamilton, Ontario}}}\par
 \medskip
 
-Focused on automated systems, advanced control, robotics, and computer programming.
+Focused on automated systems, advanced control, robotics, and computer programming. Included 16 months Co-op experience.
 
 \begin{itemize}
   \item Capstone: Developed a novel 3D metal printing process and associated G-Code Generator application.
   \item Graduate-Level Project: Designed a neural network-controlled industrial system for ethanol distillation. Project typically reserved for master's students.
   \item{\color{emphasis}{Adv.Dip - \href{https://www.mohawkcollege.ca/programs/technology/chemical-engineering-technology-co-op-533}{\dotuline{Chemical Engineering Technology}}:}} Comprehensive knowledge of chemical process design, control, and optimization.
-  \item{\color{emphasis}{Certificate - \href{https://acbsp.org/?}{\dotuline{Business Management}}:}} Studied core management and leadership principles, including financial management and marketing.
-  \item Co-Op Experience: 16 months of practical work.
-\end{itemize}
-
-\cvsection{Skills}
-\label{sec:orgdad1287}
-\begin{itemize}
-\item \textbf{Programming Languages:} Proficient in C/C++, Rust, and Python. Familiar with SQL, MATLAB, and lisp.
-\item \textbf{Development Tools:} Experienced with Git, Docker, Jenkins, Jira, and Ansible for continuous integration, version control, and project management.
-\item \textbf{Operating Systems:} Comfortable with Linux and RTOS's such as VxWorks, ThreadX and FreeRTOS.
-\item \textbf{Frameworks:} Knowledgeable in leveraging POSIX, ROS, DDS Xilinx and Qt for software development.
-\item \textbf{Protocols:} Experienced with I2C, UART, SPI, Can, Ethernet, Xinix's AXI Stream, and application-specific protocols for sensor and actuator integration.
-\item \textbf{Sensor Fusion and Localization:} Proficient in incorporating and fusing data from lidars, cameras, and IMUs.
+  \item{\color{emphasis}{Certificate - \href{https://acbsp.org/?}{\dotuline{Business Management}}:}} Studied core management and leadership principles, financial management, and marketing.
 \end{itemize}
 }
+\vspace{-1.3em}
+\cvsection{About Me \hspace*{\fill} \addEmoticon{canoe} \addEmoticon{tent} \addEmoticon{sailing-boat} \addEmoticon{violin} \addEmoticon{snowboard} \addEmoticon{hockey}}
+\label{sec:org44cd4ed}
+
+\vspace{0.25em}
+
+With a career steeped in technological innovation, I've learned the intricacies of project success and pitfalls.
+
+\vspace{0.25em}
+
+I pride myself on collaborating with diverse teams, creating something greater the sum of our individual contributions.
+
+\vspace{0.25em}
+
+An analytical thinker, I deconstruct complex problems to their core components, crafting solutions that are both robust and adaptable. This mindset has been pivotal in my professional projects and hobbies.
+
+\vspace{0.25em}
+
+As I forge ahead in my career, my goal is to leverage these skills to further drive technological innovation.
+
+\vspace{5em}
+\begin{fullwidth}
+\divider
+\end{fullwidth}
+% \begin{adjustwidth}{0.005cm}{-11cm} % Adjust the values as needed.
+%                                     % Negative values will decrease the margin.
+% \end{adjustwidth}
+\begin{fullwidth}
 \cvsection{Experience}
+\end{fullwidth}
 \label{sec:org7b8293c}
 
-
-\cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-gcs-independent-stabilized-sighting-system}{\dotuline{Embedded Software Designer - New Product Integration}}}{L3Harris-Wescam}{Jan 2020 -- Present}{Hamilton, Ontario}\begin{itemize}
-\item Received the 2023 EO Engineering and Technology Award as software lead for the development of a confidential LIDAR-adjacent project (a best in-class product with performance specs 200\% the incumbant's).
-\item Collaborated with cross-functional engineering teams to refine lens and laser sub-assemblies (as product lead).
-\item Lead the development of data distribution pipelines, abstracting I2C, SPI, UART, and Xilinx AXIS Stream data for higher-level usage.
-\item Designed a common driver framework, providing modular device orchestration for multiple projects.
-\item Developed a Python/Rust framework for automated testing and analysis of embedded systems.
-\item Provided data analytics support for in-field flight tests.
-\end{itemize}
-
-\divider
-
 \cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-series}{\dotuline{Embedded Software Designer - Sustaining}}}{L3Harris-Wescam}{May 2018 -- Dec 2019}{Hamilton, Ontario}\begin{itemize}
-\item Triaged bugs found during pre-shipment verification.
+\item Triaged bugs found during pre-shipment verification in C/C++ codebase.
+\item Utilized Jira, Git, Jenkins, and Ansible to work track issues, patch software, test code in reproducible environments.
 \item Acted as liaison to solve customer delivery logistics.
 \item Developed automation tooling to optimize workflows.
-\item Created documentation and improvement proposals for legacy software.
+\item Created documentation and improvement proposals for legacy software running VxWorks and ThreadX.
 \item Streamlined conversion of text-based documentation to PDF, Powerpoint, and website formats.
 \item Utilized TDD best practices to develop bug fixes and improvements to legacy software.
+\item Provided data analytics support for in-field flight tests using Python and Matlab.
 \end{itemize}
 
+\begin{fullwidth}
 \divider
+\end{fullwidth}
 
-\cvevent{\href{https://www.eng.mcmaster.ca/sept/practice/learning-factory}{\dotuline{Tech Assistant (Co-Op)}}}{McMaster University - The Learning Factory}{May 2017 -- Aug 2017}{Hamilton, Ontario}\begin{itemize}
-\item Proposed improvements based on best-in-industry practices.
-\item Provided estimation support for various full-scale systems.
-\item Designed and installed DCS system integration, hardware, and HMI.
-\item Developed RFID system for part/tool tracking, using C, C\#, and MySQL.
+\marginpar{
+\vspace{-25.9em}
+
+\cvevent{\href{https://www.l3harris.com/all-capabilities/wescam-mx-gcs-independent-stabilized-sighting-system}{\dotuline{Embedded Software Designer - New Product Integration}}}{L3Harris-Wescam}{Jan 2020 -- Present}{Hamilton, Ontario}\begin{itemize}
+\item Received the 2023 EO Engineering and Technology Award as software lead for best in class LIDAR development.
+\item Collaborated with cross-functional engineering teams to refine lens and laser sub-assemblies (as product lead).
+\item Lead the development of data distribution pipelines, abstracting I2C, SPI, UART, CAN, Ethernet and Xilinx AXIS Stream data for higher-level usage (leveraging DDS).
+\item Designed a common driver framework, providing modular device orchestration for multiple projects (using C/C++).
+\item Developed a Python/Rust framework for automated testing and analysis of embedded systems                                                                \item Applied Kalman filter based sensor fusion for highly performant stabilization systems.
+\item Developed OS agnostic software with support for Linux, and RTOS's such as VxWorks, ThreadX, and FreeRTOS.
 \end{itemize}
-
-\divider
+}
 
 \cvevent{\href{https://www.directenergy.com/about/brands/airtron}{\dotuline{Project Coordinator (Co-Op)}}}{Airtron Canada}{Feb 2016 -- Aug 2016}{Missisauga, Ontario}\begin{itemize}
 \item Developed Linux-based relay for environmental variable logging.
@@ -156,4 +160,14 @@ Focused on automated systems, advanced control, robotics, and computer programmi
 \item Provided estimation support for GHG offset contracts.
 \item Served as liaison to clients, summarizing project proposals and facilitating on-site data collection activities.
 \end{itemize}
+
+\marginpar{
+\vspace{-13.2em}
+\cvevent{\href{https://www.eng.mcmaster.ca/sept/practice/learning-factory}{\dotuline{Tech Assistant (Co-Op)}}}{McMaster University - The Learning Factory}{May 2017 -- Aug 2017}{Hamilton, Ontario}\begin{itemize}
+\item Proposed improvements based on best-in-industry practices.
+\item Provided estimation support for various full-scale systems using ROS, Linux and various RTOS's.
+\item Designed and installed DCS system integration, hardware, and HMI using Qt's gui framework.
+\item Developed RFID system for part/tool tracking, using C, C\#, and MySQL.
+\end{itemize}}
+
 \end{document}
